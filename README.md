@@ -12,7 +12,7 @@
     rails g bootstrap:layout
     rails g bootstrap:themed Products
     
-##Create a partial contain the modal:
+##Create '_edit_modal' partial contain the modal:
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
@@ -38,7 +38,7 @@
 ##Add div in the layouts/aplication.html.erb to render the modal
      <div id="modal"></div>
      
-##Add js.erb file to render the modal and show:   
+##Add edit.js.erb file to render the modal and show:   
     $('#modal').html("<%= j( render 'edit_modal' ) %>");
     $('#myModal').modal('show');
 
